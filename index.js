@@ -21,7 +21,7 @@ require("./util/musicUtils.js")(client);
 // load handler
 require("./util/handler.js")(client);
 
-client.login(client.config.token);
+client.login(process.env.token);
 
 function clientSettingsObject() {
   return {
